@@ -1,0 +1,42 @@
+body {
+    background-color: #66d9ff;
+    color: #383842;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #003366;
+    text-align: center;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: #003366;
+    text-align: left;
+}
+
+table {
+    border-style: groove;
+    border-color: #003366;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    text-align: justify;
+}
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: #003366;
+    text-align: right;
+}
+
+a {
+    color: #003366;
+    font-weight: bold;
+}

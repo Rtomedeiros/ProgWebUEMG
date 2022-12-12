@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário Matricula Escola</title>
+    <!-- Metadados: utilizando o padrão de caracteres PT-BR -->
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <form action="sucesso.html" method="GET">
+        <fieldset>
+            <legend>Formulário de Matricula de alunos</legend>
+            <!-- Usar o required em todos os inputs, pois todos os campos devem
+            ser preechidos obrigatóriamente -->
+            <p>
+                <label>Nome do aluno:</label>
+                <!-- Tamanho máximo de 50 caracteres -->
+                <input type="text" name="nomeAluno" placeholder="Digite o nome do aluno" maxlength="50" required>
+            </p>
+            <p>
+                <label>Data de Nascimento:</label>
+                <input type="date" name="dataNasc" required>
+            </p>
+            <p>
+                <label>E-mail:</label>
+                <input type="email" name="email" placeholder="Digite o e-mail" required>
+            </p>
+            <p>
+                <label>Telefone:</label>
+                <!-- Tamanho máximo de 15 caracteres (DDD + ramal + 8 caracteres do telefone) -->
+                <input type="text" name="telefone" placeholder="Digite o telefone" maxlength="15" required>
+            </p>
+            <p>
+                <!-- Select para selecionar APENAS UMA das opções de série no menu -->
+                <label>Série:</label>
+                <select required>
+                    <option>1º Ano do Ensino Médio</option>
+                    <option>2º Ano do Ensino Médio</option>
+                    <option>3º Ano do Ensino Médio</option>
+                    <option>4º Ano do Ensino Médio</option>
+                </select>
+            </p>
+            <p>
+                <!-- Botões radio para selecionar APENAS UM turno por vez -->
+            <fieldset>
+                <legend>Turno preferencial:</legend>
+                <input type="radio" name="turno" value="Manhã" required> Manhã</br>
+                <input type="radio" name="turno" value="Tarde" required> Tarde</br>
+                <input type="radio" name="turno" value="Noite" required> Noite</br>
+            </fieldset>
+            </p>
+            <p>
+                <!-- Checkbox para selecionar VÁRIAS atividade por vez -->
+            <fieldset>
+                <legend>Atividades Extra-curriculares:</legend>
+                <input type="checkbox" name="atividadeExtra" value="Teatro"> Teatro</br>
+                <input type="checkbox" name="atividadeExtra" value="Música"> Música</br>
+                <input type="checkbox" name="atividadeExtra" value="Ballet"> Ballet</br>
+                <input type="checkbox" name="atividadeExtra" value="Pintura"> Pintura</br>
+                <input type="checkbox" name="atividadeExtra" value="Judô"> Judô</br>
+                <input type="checkbox" name="atividadeExtra" value="Futebol"> Futebol</br>
+            </fieldset>
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
